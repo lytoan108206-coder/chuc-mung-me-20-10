@@ -3,100 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chúc mừng Ngày Phụ Nữ Việt Nam 20/10</title>
+  <title>Chúc mừng mẹ 20/10</title>
   <style>
     body {
       margin: 0;
       padding: 0;
+      text-align: center;
       background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
       font-family: "Segoe UI", sans-serif;
       color: #fff;
-      text-align: center;
-      overflow: hidden;
     }
 
     h1 {
-      font-size: 3em;
       margin-top: 80px;
-      animation: fadeIn 2s ease;
+      font-size: 2.5em;
     }
 
-    h2 {
-      font-weight: normal;
-      font-size: 1.5em;
-      margin-bottom: 30px;
-      animation: fadeIn 3s ease;
-    }
-
-    .message {
-      background: rgba(255, 255, 255, 0.2);
-      display: inline-block;
-      padding: 20px 30px;
-      border-radius: 20px;
-      font-size: 1.2em;
-      max-width: 80%;
+    p {
+      font-size: 1.3em;
       line-height: 1.6;
-      animation: fadeIn 4s ease;
+      margin: 20px auto;
+      width: 80%;
     }
 
-    .signature {
-      margin-top: 40px;
-      font-style: italic;
-      animation: fadeIn 5s ease;
+    .heart {
+      font-size: 3em;
+      animation: beat 1s infinite;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Hiệu ứng hoa rơi */
-    .flower {
-      position: absolute;
-      top: -50px;
-      color: pink;
-      font-size: 24px;
-      opacity: 0.9;
-      animation: fall linear forwards;
-    }
-
-    @keyframes fall {
-      to {
-        transform: translateY(100vh) rotate(360deg);
-        opacity: 0.7;
-      }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
     }
   </style>
 </head>
 <body>
 
-  <h1>🌷 Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10 🌷</h1>
-  <h2>Gửi tặng Mẹ thân yêu</h2>
-
-  <div class="message">
-    <p>Mẹ ơi, con chúc mẹ luôn mạnh khỏe, luôn nở nụ cười thật tươi<br>
-    và hạnh phúc mỗi ngày. Cảm ơn mẹ vì đã luôn yêu thương và hi sinh cho con.</p>
-    <p>Con yêu mẹ nhiều lắm ❤️</p>
-  </div>
-
-  <div class="signature">
-    — Từ con, với tất cả yêu thương 💌 —
-  </div>
-
-  <script>
-    // Hiệu ứng hoa rơi
-    const hoa = ["🌸", "💮", "🌺", "🌷", "🌹"];
-    function taoHoa() {
-      const flower = document.createElement("div");
-      flower.classList.add("flower");
-      flower.innerText = hoa[Math.floor(Math.random() * hoa.length)];
-      flower.style.left = Math.random() * 100 + "vw";
-      flower.style.animationDuration = 4 + Math.random() * 3 + "s";
-      document.body.appendChild(flower);
-      setTimeout(() => flower.remove(), 7000);
-    }
-    setInterval(taoHoa, 300);
-  </script>
+  <h1>💐 Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10 💐</h1>
+  <p>Mẹ ơi, con chúc mẹ thật nhiều sức khỏe, luôn hạnh phúc và mỉm cười mỗi ngày.</p>
+  <p>Cảm ơn mẹ vì tất cả những yêu thương và hi sinh dành cho con. ❤️</p>
+  <div class="heart">💖</div>
+  <p><i>Con yêu mẹ nhiều lắm!</i></p>
 
 </body>
 </html>
+
+
